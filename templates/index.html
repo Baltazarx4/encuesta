@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="location">Dojo Location:</label>
+        <select id="location" name="location">
+            <option value="City1">Ciudad 1</option>
+            <option value="City2">Ciudad 2</option>
+            <option value="City3">Ciudad 3</option>
+        </select>
+        
+        <label for="language">Lenguaje favorito:</label>
+        <select id="language" name="language">
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+        </select>
+        
+        <label for="comment">Comentario (opcional):</label>
+        <textarea id="comment" name="comment"></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
